@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendiendo Vue.js</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!--$ 1.- Caja de texto -->
+
+    <div id="app">
+        <form action="" v-on:submit.prevent="guardarTarea">
+            <!--* caja de texto  -->
+            <input v-model="nuevaTarea" type="text" /> <br />
+
+            <input type="submit" value="Envíar" />
+            <!--* boton  -->
+        </form>
+        <hr />
+        <ul>
+            <li v-for="tarea in tareas">{{ tarea }}</li>
+        </ul>
+        <!--         <pre>{{$data}} </pre> -->
+    </div>
+
+    <!--$ 1.- imagen -->
+    <div id="app-2" class="bloque">
+        <h3>Elige las dimensiones de tu imagen</h3>
+        Ancho: <input v-model="ancho" type="range" name="" id="">{{this.ancho*2}}
+        Alto: <input v-model="alto" type="range" name="" id="">{{this.alto*2}}
+        <br>
+        <br>
+        <img v-bind:src="urlCompleta">
+        <br>
+        <strong>fuente:</strong> <a :href="urlCompleta"> {{urlCompleta}} </a>
+    </div>
+</body>
+
+<script src="js/vue.vue"></script>
+<script src="js/inicio.vue"></script>
+
+</html>
