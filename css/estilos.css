@@ -1,6 +1,15 @@
-.bloque{
-    background: orange;
-    margin: 5px;
-    padding: 5px 45px;
+body {
+    background: #35495e;
+    font-family: 'Nanum Gothic', sans-serif;
+}
 
+.bloque {
+    background: #41b883c9;
+    margin: 15px 8px;
+    padding: 5px 45px;
+    border-radius: 1em;
+}
+
+center {
+    font-size: 1.5em;
 }

@@ -12,6 +12,7 @@ new Vue({
         }
     }
 })
+//! Resolución de imagenes de gatitos
 new Vue({
     el: "#app-2",
     data: {
@@ -26,7 +27,12 @@ new Vue({
     }
 });
 
-
+new Vue({
+    el: '#app3',
+    data: {
+        seen: 31
+    }
+})
 
 
 Vue.config.devtools = true; //*linea para habilitar Vuedevtools

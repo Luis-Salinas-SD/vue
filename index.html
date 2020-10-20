@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprendiendo Vue.js</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!--$ 1.- Caja de texto -->
+    <div id="app" class="bloque">
+                <center>Ejercicio de agregar tareas</center>
 
-    <div id="app">
         <form action="" v-on:submit.prevent="guardarTarea">
             <!--* caja de texto  -->
-            <input v-model="nuevaTarea" type="text" /> <br />
-
-            <input type="submit" value="Envíar" />
+            Agrega una tarea: <input v-model="nuevaTarea" type="text" /> <br />
+            <center>            <input type="submit" value="Envíar" />
+</center>
             <!--* boton  -->
         </form>
         <hr />
@@ -28,6 +30,8 @@
 
     <!--$ 1.- imagen -->
     <div id="app-2" class="bloque">
+                <center>Resoluciones de imagenes de gatitos</center>
+
         <h3>Elige las dimensiones de tu imagen</h3>
         Ancho: <input v-model="ancho" type="range" name="" id="">{{this.ancho*2}}
         Alto: <input v-model="alto" type="range" name="" id="">{{this.alto*2}}
@@ -36,6 +40,13 @@
         <img v-bind:src="urlCompleta">
         <br>
         <strong>fuente:</strong> <a :href="urlCompleta"> {{urlCompleta}} </a>
+    </div>
+<!--$ Directiva v-if  -->
+    <div id="app3" class="bloque">
+        <center>Directiva v-if</center>
+        <h1 v-if="seen <= 10">primeros 10 lugares</h1>
+        <h2 v-else-if="seen <= 20">primeros 20 lugares</h2>
+        <h2 v-else="seen < 31">primeros 30 lugares</h2>
     </div>
 </body>
 
