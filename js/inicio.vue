@@ -26,13 +26,26 @@ new Vue({
         },
     }
 });
-
+//! Directiva if-else
 new Vue({
     el: '#app3',
     data: {
         seen: 31
     }
 })
+//! Directiva V-for
+new Vue({
+    el: 'main',
+    data:{
+        days:['lunes', 'martes', 'miercoles']
+    }
+})
+
+
+
+
+
+
 
 
 Vue.config.devtools = true; //*linea para habilitar Vuedevtools
