@@ -37,7 +37,7 @@ new Vue({
 new Vue({
     el: 'main',
     data:{
-        days:['lunes', 'martes', 'miercoles']
+        days:['lunes', 'martes', 'miercoles', 'jueves', ' viernes', 'sabao', 'domingo']
     }
 })
 

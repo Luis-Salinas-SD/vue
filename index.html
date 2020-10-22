@@ -48,12 +48,16 @@
         <h2 v-else="seen < 31">primeros 30 lugares</h2>
     </div>
     <!--$ Directiva v-for  -->
-    <main>
-        <h1>Renderiazado de listas</h1>
-        <ul>
-            <li>  <pre>{{days}}</pre>  </li>
-        </ul>
-    </main>
+    <div class="bloque">
+        <main>
+            <center>Directiva v-for</center>
+            <h4> Renderizado de listas</h4>
+            <ul>
+                <li v-for="day in days"> {{day}} </li>
+            </ul>
+
+        </main>
+    </div>
 
 </body>
 
