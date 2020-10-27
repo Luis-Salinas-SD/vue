@@ -40,6 +40,7 @@
         <br>
         <strong>fuente:</strong> <a :href="urlCompleta"> {{urlCompleta}} </a>
     </div>
+
     <!--$ Directiva v-if  -->
     <div id="app3" class="bloque">
         <center>Directiva v-if</center>
@@ -47,11 +48,12 @@
         <h2 v-else-if="seen <= 20">primeros 20 lugares</h2>
         <h2 v-else="seen < 31">primeros 30 lugares</h2>
     </div>
+
     <!--$ Directiva v-for  -->
     <main>
         <h1>Renderiazado de listas</h1>
         <ul>
-            <li>  <pre>{{days}}</pre>  </li>
+            <li v-for="days"> {{days}} </li>
         </ul>
     </main>
 
