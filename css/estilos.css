@@ -1,10 +1,17 @@
 body {
-    background: #35495e;
+    background: hsla(211, 28%, 29%, 0.959);
     font-family: 'Nanum Gothic', sans-serif;
 }
 
 .bloque {
-    background: #41b883c9;
+    background: hsla(153, 47%, 51%, 0.829);
+    margin: 15px 8px;
+    padding: 5px 45px;
+    border-radius: 1em;
+}
+
+.bloque-note {
+    background: hsla(41, 100%, 65%, 0.829);
     margin: 15px 8px;
     padding: 5px 45px;
     border-radius: 1em;
@@ -12,4 +19,19 @@ body {
 
 center {
     font-size: 1.5em;
+    margin: 8px;
+}
+
+p {
+    background: rgba(255, 253, 222, 0.904);
+    padding: 10px;
+    border-radius: 1em;
+    display: inline-block;
+}
+
+.exe {
+    background: rgba(237, 245, 194, 0.932);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 1em;
 }

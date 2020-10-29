@@ -1,4 +1,4 @@
-//! Creador de textos
+//! Creador de lista
 new Vue({
     el: "#app",
     data: {
@@ -26,14 +26,14 @@ new Vue({
         },
     }
 });
-//! Directiva if-else
+//! Directiva v-if-else
 new Vue({
     el: '#app3',
     data: {
         seen: 31
     }
 })
-//! Directiva V-for
+//! Directiva v-for
 new Vue({
     el: 'main',
     data:{
