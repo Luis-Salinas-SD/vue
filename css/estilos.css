@@ -29,9 +29,24 @@ p {
     display: inline-block;
 }
 
+pre {
+    background: rgba(255, 253, 222, 0.904);
+    padding: 10px;
+    border-radius: 1em;
+    display: inline-block;
+}
+
 .exe {
     background: rgba(237, 245, 194, 0.932);
     margin: 5px;
     padding: 10px;
     border-radius: 1em;
+}
+
+.img{
+    display: block;
+    width: 35%;
+    height: 35%;
+    margin: auto;
+
 }

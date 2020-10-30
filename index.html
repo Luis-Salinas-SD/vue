@@ -5,16 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprendiendo Vue.js</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
     <article class="bloque-note">
         <center>Notas de Vue.js</center>
-        <p>Es un framework progresivo para construir interfaces de usuario. La librería central está enfocada solo en la
-            capa de visualización, y es fácil de utilizar e integrar con otras librerías o proyectos existentes.</p>
+        <p>
+            Es un framework progresivo para construir interfaces de usuario. La
+            librería central está enfocada solo en la capa de visualización, y es
+            fácil de utilizar e integrar con otras librerías o proyectos existentes.
+        </p>
     </article>
     <!--$ Ejercicio 1  -->
     <article class="bloque">
@@ -24,23 +27,31 @@
         <div id="app" class="exe">
             <form action="" v-on:submit.prevent="guardarTarea">
                 Agrega una tarea: <input v-model="nuevaTarea" type="text" /> <br />
-                <center> <input type="submit" value="Envíar" /></center>
+                <center><input type="submit" value="Envíar" /></center>
             </form>
-            <hr/>
+            <hr />
             <ul>
                 <li v-for="tarea in tareas">{{ tarea }}</li>
             </ul>
         </div>
     </article>
+
     <article class="bloque-note">
         <center>Notas de Vue.js</center>
+        <p>La estructura de vue es la siguiente:</p>
+        <img src="img/1.png" alt="imagen-1" class="img" />
         <p>
-            
-        </p>
+            <strong>el:</strong>
+            <-- elemento(id). <br />
+            <strong>data:</strong>
+            <-- modelo (variables). <br />
+            <strong>method:</strong>
+                <-- metodo (la logica)
+            </p>
     </article>
 
-        <!--$ 2.- Resolución de imagenes de gatitos -->
-        <!-- <div id="app-2" class="bloque">
+    <!--$ 2.- Resolución de imagenes de gatitos -->
+    <div id="app-2" class="bloque">
         <center>Resoluciones de imagenes de gatitos</center>
 
         <h3>Elige las dimensiones de tu imagen</h3>
@@ -51,18 +62,18 @@
         <img v-bind:src="urlCompleta">
         <br>
         <strong>fuente:</strong> <a :href="urlCompleta"> {{urlCompleta}} </a>
-    </div> -->
+    </div>
 
-        <!--$ Directiva v-if-else -->
-        <!-- <div id="app3" class="bloque">
+    <!--$ Directiva v-if-else -->
+    <div id="app3" class="bloque">
         <center>Directiva v-if</center>
         <h1 v-if="seen <= 10">primeros 10 lugares</h1>
         <h2 v-else-if="seen <= 20">primeros 20 lugares</h2>
         <h2 v-else="seen < 31">primeros 30 lugares</h2>
-    </div> -->
+    </div>
 
-        <!--$ Directiva v-for -->
-        <!-- <div class="bloque">
+    <!--$ Directiva v-for -->
+    <div class="bloque">
         <main>
             <center>Directiva v-for</center>
             <h4> Renderizado de listas</h4>
@@ -71,9 +82,9 @@
             </ul>
 
         </main>
-    </div> -->
-        <!--$ Propiedades computadas -->
-        <!-- <div class="bloque">
+    </div>
+    <!--$ Propiedades computadas -->
+    <!-- <div class="bloque">
         <main>
             <center>Propiedades Computadas</center>
         </main>
